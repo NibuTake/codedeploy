@@ -16,6 +16,7 @@ hooks:
       runas: root
     - location: scripts/virtualenv_create_encryptfile.sh
       timeout: 300
+      runas: root
     - location: scripts/encryptfile_activate.sh
       timeout: 300
     - location: scripts/pandas_pip_install.sh
@@ -24,3 +25,4 @@ hooks:
       timeout: 300
     - location: scripts/sitepackage_zip.sh
       timeout: 300
+      runas: root
