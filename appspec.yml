@@ -9,3 +9,4 @@ hooks:
     - location: scripts/build_library_install.sh
     - location: scripts/Python3_6_install.sh
     - location: scripts/virtualenv_install.sh
+    - location: scripts/virtualenv_create_encryptfile.sh
