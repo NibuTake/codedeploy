@@ -5,5 +5,5 @@ files:
     destination: /var/www/html/
 hooks:
   BeforeInstall:
-    - location: script/httpd_install.sh
+    - location: scripts/httpd_install.sh
       timeout: 300
