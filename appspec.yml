@@ -5,4 +5,14 @@ files:
     destination: /var/www/html/
 hooks:
   BeforeInstall:
-    - location: scripts/test_mkdir.sh
+    - location: scripts/prefix_define.sh
+    - location: scripts/build_library_install.sh
+      runas: root
+    - location: scripts/Python3_6_install.sh
+    - location: scripts/virtualenv_install.sh
+    - location: scripts/virtualenv_create_encryptfile.sh
+    - location: scripts/encryptfile_activate.sh
+    - location: scripts/pandas_pip_install.sh
+    - location: scripts/encryptfile_deactivate.sh
+    - location: scripts/sitepackage_zip.sh
+      timeout: 300
