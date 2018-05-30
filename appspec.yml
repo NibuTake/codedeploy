@@ -5,6 +5,9 @@ files:
     destination: /var/www/html/
 hooks:
   BeforeInstall:
+    - location: scripts/build_library_install.sh
+      timeout: 300
+      runas: root
     - location: scripts/Python3_6_install.sh
       timeout: 300
       runas: root
