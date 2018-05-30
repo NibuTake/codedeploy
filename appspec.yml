@@ -6,14 +6,10 @@ files:
 hooks:
   BeforeInstall:
     - location: scripts/build_library_install.sh
-      runas: root
     - location: scripts/Python3_6_install.sh
-      runas: root
     - location: scripts/virtualenv_install.sh
-      runas: root
     - location: scripts/virtualenv_create_encryptfile.sh
       timeout: 300
-      runas: root
     - location: scripts/encryptfile_activate.sh
       timeout: 300
     - location: scripts/pandas_pip_install.sh
@@ -22,4 +18,3 @@ hooks:
       timeout: 300
     - location: scripts/sitepackage_zip.sh
       timeout: 300
-      runas: root
