@@ -1,5 +1,5 @@
 #!/bin/bash
-cd
 ifconfig
 cat /etc/passwd|sed -e 's/:.*//g'
-mkdir hogeee
+prefix='/home/ec2-user/'
+mkdir ${prefix}hogeee
