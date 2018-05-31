@@ -6,4 +6,4 @@ files:
 hooks:
   BeforeInstall:
     - location: scripts/test_apply.sh
-      runas: root
+    - runas: root
