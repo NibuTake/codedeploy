@@ -16,7 +16,6 @@ make
 sudo make install
 
 sudo /usr/local/bin/pip3.6 install virtualenv
-/usr/local/bin/virtualenv -p /usr/local/bin//python3.6 /usr/tmp/encryptfile
-
+/usr/local/bin/virtualenv -p /usr/local/bin//python3.6 /usr/tmp/test_encry
 
 /usr/local/bin/virtualenv -p /usr/local/bin//python3.6 /home/ec2-user/test_encry
