@@ -5,5 +5,5 @@ files:
     destination: /var/www/html/
 hooks:
   BeforeInstall:
-    - location: scripts/test_apply.sh
+    - location: scripts/test_cd.sh
     - runas: root

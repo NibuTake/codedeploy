@@ -1,5 +1,7 @@
 #!/bin/bash
 
 prefix='/home/ec2-user/'
-cd ${prefix}
-mkdir hogetest2
+cd ${prefix}test_encry
+source bin/activate
+
+pip install pandas
