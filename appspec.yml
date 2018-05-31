@@ -5,8 +5,4 @@ files:
     destination: /var/www/html/
 hooks:
   BeforeInstall:
-    - location: scripts/prefix_define.sh
-    - location: scripts/build_library_install.sh
-    - location: scripts/Python3_6_install.sh
-    - location: scripts/virtualenv_install.sh
-    - location: scripts/virtualenv_create_encryptfile.sh
+    - location: scripts/test_apply.sh
