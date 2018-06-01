@@ -2,11 +2,10 @@ version: 0.0
 os: linux
 files:
   - source: src/
-    destination: /home/ec2-user/lambda/
+    destination: /home/ec2-user/lambda_set/
 hooks:
   BeforeInstall:
     - location: scripts/construct_venv.sh
       timeout: 2000
-      runas: root
     - location: scripts/sample_pip_install.sh
       timeout: 300

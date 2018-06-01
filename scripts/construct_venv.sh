@@ -18,4 +18,4 @@ sudo /usr/local/bin/pip3.6 install virtualenv
 /usr/local/bin/virtualenv -p /usr/bin/python2.7 ${prefix}encrypt_2
 
 cd ${prefix}
-mkdir lambda
+mkdir lambda_set
