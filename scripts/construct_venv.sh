@@ -14,12 +14,8 @@ make
 sudo make install
 
 sudo /usr/local/bin/pip3.6 install virtualenv
-/usr/local/bin/virtualenv -p /usr/local/bin//python3.6 /usr/tmp/encrypt_3
-/usr/local/bin/virtualenv -p /usr/bin/python2.7 /usr/tmp/encrypt_2
+/usr/local/bin/virtualenv -p /usr/local/bin//python3.6 ${prefix}encrypt_3
+/usr/local/bin/virtualenv -p /usr/bin/python2.7 ${prefix}encrypt_2
 
-prefix='/home/ec2-user/'
 cd ${prefix}
 mkdir lambda
-cd encrypt_3
-source bin/activate
-pip install pandas
