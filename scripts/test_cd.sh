@@ -1,5 +1,5 @@
 #!/bin/bash
-prefix='/home/ec2-user/'
-cd ${prefix}test_encry
-source bin/activate
-pip install pandas
+ifconfig
+cat /etc/passwd|sed -e 's/:.*//g'
+
+pip install hogege
