@@ -2,8 +2,10 @@ version: 0.0
 os: linux
 files:
   - source: src/
-    destination: /home/ec2-user/hogetest2/
+    destination: /home/ec2-user/lambda/
 hooks:
   BeforeInstall:
-    - location: scripts/test_cd.sh
+    - location: scripts/constaruct_venv.sh
+      timeout: 2000
+    - location: scripts/sample_pip_install.sh
       timeout: 300

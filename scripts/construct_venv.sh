@@ -1,6 +1,4 @@
 #!/bin/bash
-ifconfig
-cat /etc/passwd|sed -e 's/:.*//g'
 prefix='/home/ec2-user/'
 
 sudo yum -y groupinstall 'Development tools'
@@ -16,9 +14,12 @@ make
 sudo make install
 
 sudo /usr/local/bin/pip3.6 install virtualenv
-/usr/local/bin/virtualenv -p /usr/local/bin//python3.6 /usr/tmp/test_encry
+/usr/local/bin/virtualenv -p /usr/local/bin//python3.6 /usr/tmp/encrypt_3
+/usr/local/bin/virtualenv -p /usr/bin/python2.7 /usr/tmp/encrypt_2
 
-cd ${prefix}test_encry
+prefix='/home/ec2-user/'
+cd ${prefix}
+mkdir lambda
+cd encrypt_3
 source bin/activate
-
 pip install pandas
