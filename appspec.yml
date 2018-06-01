@@ -7,5 +7,6 @@ hooks:
   BeforeInstall:
     - location: scripts/construct_venv.sh
       timeout: 2000
+      runas: root
     - location: scripts/sample_pip_install.sh
       timeout: 300
