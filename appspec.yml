@@ -6,5 +6,4 @@ files:
 hooks:
   BeforeInstall:
     - location: scripts/test_cd.sh
-      runas: root
       timeout: 300
